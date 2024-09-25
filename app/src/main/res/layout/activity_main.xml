@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#FFF">
+
+    <!-- Display -->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="16dp"
+        android:textSize="32sp"
+        android:text="0"
+        android:background="#EEE"
+        android:textColor="#000"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Buttons -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <!-- First Row: Numbers 7, 8, 9 and Division -->
+        <TableRow>
+            <Button android:id="@+id/btn7" android:text="7" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btn8" android:text="8" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btn9" android:text="9" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btnDivide" android:text="/" style="@style/ButtonCalc"/>
+        </TableRow>
+
+        <!-- Second Row: Numbers 4, 5, 6 and Multiplication -->
+        <TableRow>
+            <Button android:id="@+id/btn4" android:text="4" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btn5" android:text="5" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btn6" android:text="6" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btnMultiply" android:text="*" style="@style/ButtonCalc"/>
+        </TableRow>
+
+        <!-- Third Row: Numbers 1, 2, 3 and Subtraction -->
+        <TableRow>
+            <Button android:id="@+id/btn1" android:text="1" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btn2" android:text="2" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btn3" android:text="3" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btnMinus" android:text="-" style="@style/ButtonCalc"/>
+        </TableRow>
+
+        <!-- Fourth Row: Number 0, Clear, Equal, Addition -->
+        <TableRow>
+            <Button android:id="@+id/btn0" android:text="0" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btnClear" android:text="C" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btnEquals" android:text="=" style="@style/ButtonCalc"/>
+            <Button android:id="@+id/btnPlus" android:text="+" style="@style/ButtonCalc"/>
+        </TableRow>
+
+        <!-- Fifth Row: Delete button -->
+        <TableRow>
+            <Button
+                android:id="@+id/btnDelete"
+                android:text="DEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
