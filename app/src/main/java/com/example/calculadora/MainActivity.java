@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private String currentInput = "";
     private String operator = "";
     private double firstValue = 0;
+    //    Santiago Franco De La Rosa - 2155080 Autor
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
